@@ -8,10 +8,26 @@
     src: url(./polices/Roboto-Regular.ttf);
 }
 
+body {
+    font-family: Roboto;
+}
 
 .Titre {
     font-family: Shrikhand;
     text-align: center;
     border-bottom: 2px solid grey;
     padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0%;
 }
+
+.Search{
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: .5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+

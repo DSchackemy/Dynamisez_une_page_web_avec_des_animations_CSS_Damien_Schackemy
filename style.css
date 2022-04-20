@@ -8,10 +8,32 @@
   src: url(./polices/Roboto-Regular.ttf);
 }
 
+body {
+  font-family: Roboto;
+}
+
 .Titre {
   font-family: Shrikhand;
   text-align: center;
   border-bottom: 2px solid grey;
   padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0%;
+}
+
+.Search {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
