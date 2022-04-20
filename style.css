@@ -1,4 +1,17 @@
-body {
-  background-color: green;
+@font-face {
+  font-family: Shrikhand;
+  src: url(./polices/Shrikhand-Regular.otf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./polices/Roboto-Regular.ttf);
+}
+
+.Titre {
+  font-family: Shrikhand;
+  text-align: center;
+  border-bottom: 2px solid grey;
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
