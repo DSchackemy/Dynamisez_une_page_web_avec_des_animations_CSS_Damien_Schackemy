@@ -8,18 +8,21 @@
     src: url(./polices/Roboto-Regular.ttf);
 }
 
-body {
-    font-family: Roboto;
+/* mixins */
+
+@mixin box-shadow-base {
+    box-shadow: 2px 1px 15px -3px black;
 }
 
-.Titre {
-    font-family: Shrikhand;
-    text-align: center;
-    border-bottom: 2px solid grey;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    margin: 0%;
-    font-size: 3rem;
+@mixin transform-scale {
+    transform: scale(1.02);
+        transition: all 500ms;
+        opacity: 0.9;
+}
+
+
+body {
+    font-family: Roboto;
 }
 
 .Search{
@@ -31,6 +34,16 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+.Titre {
+    font-family: Shrikhand;
+    text-align: center;
+    border-bottom: 2px solid grey;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0%;
+    font-size: 3rem;
 }
 
 /* explorer nos restaurants */
@@ -55,15 +68,75 @@ body {
         border-radius: 30px;
         padding: 1rem;
         border: none;
-        box-shadow: 2px 1px 15px -3px black;
+        @include box-shadow-base;
         margin-top: 20px;
     }
     button:hover {
-        transform: scale(1.02);
-        transition: all 500ms;
-        opacity: 0.9;
+        @include transform-scale;
     }
 
 }
+
+/* partie fonctionnement */
+
+.Fontionnement {
+    margin-bottom: 60px;
+    h3 {
+        padding-left: 60px;
+        margin-bottom: 25px;
+    }
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style-type: none;
+        @media (max-width:863px) {
+            flex-direction: column;
+            margin-right: 30px;
+        }
+    li {
+        background-color: #f2f2f2;
+        padding: 10px;
+        flex-grow: 1;
+        border-radius: 35px;
+        @include box-shadow-base;
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    li:hover {
+        @include transform-scale;
+        i {
+            color:#9356DC;
+        }
+    }
+    i {
+        margin-right: 20px;
+        padding-left: 20px;
+        color: grey;
+        }
+    }
+    span {
+        display: flex;
+            align-items: center;
+            justify-content: center;          
+            color: white;
+            background-color: #9356DC;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            margin-left: -20px;
+    }
+}
+
+/* Restaurants card */
+.Restaurants {
+    background:#d3d3d326 ;
+    h3 {
+        padding-left: 60px;
+        margin-bottom: 25px;
+    }
+}
+
 
 

@@ -8,18 +8,9 @@
   src: url(./polices/Roboto-Regular.ttf);
 }
 
+/* mixins */
 body {
   font-family: Roboto;
-}
-
-.Titre {
-  font-family: Shrikhand;
-  text-align: center;
-  border-bottom: 2px solid grey;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  margin: 0%;
-  font-size: 3rem;
 }
 
 .Search {
@@ -37,6 +28,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.5rem;
+}
+
+.Titre {
+  font-family: Shrikhand;
+  text-align: center;
+  border-bottom: 2px solid grey;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0%;
+  font-size: 3rem;
 }
 
 /* explorer nos restaurants */
@@ -78,5 +79,99 @@ body {
   -webkit-transition: all 500ms;
   transition: all 500ms;
   opacity: 0.9;
+}
+
+/* partie fonctionnement */
+.Fontionnement {
+  margin-bottom: 60px;
+}
+
+.Fontionnement h3 {
+  padding-left: 60px;
+  margin-bottom: 25px;
+}
+
+.Fontionnement ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+@media (max-width: 863px) {
+  .Fontionnement ol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 30px;
+  }
+}
+
+.Fontionnement ol li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 35px;
+  -webkit-box-shadow: 2px 1px 15px -3px black;
+          box-shadow: 2px 1px 15px -3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+.Fontionnement ol li:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  opacity: 0.9;
+}
+
+.Fontionnement ol li:hover i {
+  color: #9356DC;
+}
+
+.Fontionnement ol i {
+  margin-right: 20px;
+  padding-left: 20px;
+  color: grey;
+}
+
+.Fontionnement span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-left: -20px;
+}
+
+/* Restaurants card */
+.Restaurants {
+  background: #d3d3d326;
+}
+
+.Restaurants h3 {
+  padding-left: 60px;
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */
