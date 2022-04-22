@@ -101,7 +101,7 @@ body {
   list-style-type: none;
 }
 
-@media (max-width: 863px) {
+@media (max-width: 881px) {
   .Fontionnement ol {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -166,12 +166,149 @@ body {
 }
 
 /* Restaurants card */
-.Restaurants {
+.restaurant {
   background: #d3d3d326;
+  margin-bottom: 2rem;
 }
 
-.Restaurants h3 {
+.restaurant h3 {
   padding-left: 60px;
   margin-bottom: 25px;
+}
+
+.restaurant a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant .restaurant_card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 881px) {
+  .restaurant .restaurant_card {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
+.restaurant .restaurant_card .descriptionCard {
+  background-color: white;
+}
+
+.restaurant .restaurant_card .cardNouveau {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.restaurant .restaurant_card .cardNouveau h4 {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.restaurant .restaurant_card .cardNouveau p {
+  margin: 0.5rem;
+}
+
+.restaurant .restaurant_card .cardNouveau i {
+  position: absolute;
+  right: 4rem;
+  top: 88%;
+}
+
+.restaurant .restaurant_card .cardNouveau::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  right: 3rem;
+  top: 1rem;
+}
+
+.restaurant .restaurant_card .imgCard1 {
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant .restaurant_card .imgCard2 {
+  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant .card {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.restaurant .card h4 {
+  margin: 0rem;
+  padding-top: 0.5rem;
+}
+
+.restaurant .card p {
+  margin: 0.5rem;
+}
+
+.restaurant .card i {
+  position: absolute;
+  right: 4rem;
+  top: 88%;
+}
+
+.restaurant .card .imgCard3 {
+  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant .card .imgCard4 {
+  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  border-radius: 15px 15px 0 0;
+}
+
+/* footer */
+footer {
+  background-color: #292727;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+footer h2 {
+  font-family: Shrikhand;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer i {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
