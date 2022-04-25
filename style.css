@@ -218,7 +218,23 @@ body {
 .restaurant .restaurant_card .cardNouveau i {
   position: absolute;
   right: 4rem;
-  top: 88%;
+  top: 83%;
+  font-size: 2rem;
+}
+
+.restaurant .restaurant_card .cardNouveau .fas {
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
+  background-image: linear-gradient(to top, #9356DC, #ff79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.restaurant .restaurant_card .cardNouveau .fas:hover {
+  opacity: 1;
 }
 
 .restaurant .restaurant_card .cardNouveau::before {
@@ -269,7 +285,23 @@ body {
 .restaurant .card i {
   position: absolute;
   right: 4rem;
-  top: 88%;
+  top: 83%;
+  font-size: 2rem;
+}
+
+.restaurant .card .fas {
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
+  background-image: linear-gradient(to top, #9356DC, #ff79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: all 00ms ease;
+  transition: all 00ms ease;
+}
+
+.restaurant .card .fas:hover {
+  opacity: 1;
 }
 
 .restaurant .card .imgCard3 {
