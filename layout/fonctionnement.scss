@@ -1,0 +1,49 @@
+.Fontionnement {
+    margin-bottom: 60px;
+    h3 {
+        padding-left: 60px;
+        margin-bottom: 25px;
+    }
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style-type: none;
+        @media (max-width:881px) {
+            flex-direction: column;
+            margin-right: 30px;
+        }
+    li {
+        background-color: #f2f2f2;
+        padding: 10px;
+        flex-grow: 1;
+        border-radius: 35px;
+        @include box-shadow-base;
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    li:hover {
+        @include transform-scale;
+        i {
+            color:#9356DC;
+        }
+    }
+    i {
+        margin-right: 20px;
+        padding-left: 20px;
+        color: grey;
+        }
+    }
+    span {
+        display: flex;
+            align-items: center;
+            justify-content: center;          
+            color: white;
+            background-color: #9356DC;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            margin-left: -20px;
+    }
+}

@@ -1,0 +1,9 @@
+@mixin box-shadow-base {
+    box-shadow: 2px 1px 15px -3px black;
+}
+
+@mixin transform-scale {
+    transform: scale(1.02);
+        transition: all 500ms;
+        opacity: 0.9;
+}

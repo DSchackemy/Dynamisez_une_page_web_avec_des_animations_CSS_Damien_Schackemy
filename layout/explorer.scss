@@ -1,0 +1,43 @@
+
+
+.city {
+    background:#d3d3d326 ;
+}
+
+.Search{
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: .5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.explorer {
+    text-align: center;
+    padding-bottom: 50px;
+    h3 {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    button {
+        background-image: linear-gradient(to top, #9356DC, #ff79DA);
+        color: white;
+        font-weight:300;
+        font-size: 1.5rem;
+        border-radius: 30px;
+        padding: 1rem;
+        border: none;
+        @include box-shadow-base;
+        margin-top: 20px;
+    }
+    button:hover {
+        @include transform-scale;
+    }
+
+}

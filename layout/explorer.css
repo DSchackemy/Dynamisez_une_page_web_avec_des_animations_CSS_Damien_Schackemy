@@ -1,0 +1,40 @@
+.city {
+  background: #d3d3d326;
+}
+
+.explorer {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.explorer h3 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.explorer p {
+  font-size: 1.5rem;
+}
+
+.explorer button {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
+  background-image: linear-gradient(to top, #9356DC, #ff79DA);
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  padding: 1rem;
+  border: none;
+  -webkit-box-shadow: 2px 1px 15px -3px black;
+          box-shadow: 2px 1px 15px -3px black;
+  margin-top: 20px;
+}
+
+.explorer button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  opacity: 0.9;
+}
+/*# sourceMappingURL=explorer.css.map */
