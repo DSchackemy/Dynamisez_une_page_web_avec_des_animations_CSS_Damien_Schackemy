@@ -1,0 +1,24 @@
+img {
+    max-width: 100%;
+    height: 60%;
+}
+
+main h2{
+    font-family: Shrikhand;
+    position: relative;
+    &::before {
+        @include heart;
+    }
+    &::after {
+        @include heart;
+        @include gradient;
+        opacity: 0;
+        color: transparent;
+        font-weight: 900;
+    }
+    &:hover::after {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+    
+}

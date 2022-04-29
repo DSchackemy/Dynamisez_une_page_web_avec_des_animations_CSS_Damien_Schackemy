@@ -7,3 +7,27 @@
         transition: all 500ms;
         opacity: 0.9;
 }
+
+@mixin heart {
+    display: inline-block;
+                font-style: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f004";
+                position: absolute;
+                right: 3rem;
+                top:20%;
+                font-size: 2rem;
+                color: inherit;
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 1;
+                cursor: pointer;
+                transition: all 500ms ease;
+}
+
+@mixin gradient {
+    background-image: linear-gradient(to top, #9356DC, #ff79DA);
+}
