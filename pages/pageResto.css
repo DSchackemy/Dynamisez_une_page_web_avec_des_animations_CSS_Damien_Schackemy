@@ -1,8 +1,79 @@
-img {
-  max-width: auto;
+.banniere img {
+  width: 102%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  position: relative;
 }
 
 main h2 {
   font-family: Shrikhand;
+  position: relative;
+}
+
+main h2::before {
+  display: inline-block;
+  font-style: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  position: absolute;
+  right: 3rem;
+  top: 15%;
+  font-size: 2rem;
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+main h2::after {
+  display: inline-block;
+  font-style: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  position: absolute;
+  right: 3rem;
+  top: 15%;
+  font-size: 2rem;
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
+  background-image: linear-gradient(to top, #9356DC, #ff79DA);
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
+}
+
+main h2:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.restoName {
+  border-top: 1px solid black;
+  border-radius: 25px 25px 0 0;
+  margin-top: -92px;
+  background-color: lightgray;
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=pageResto.css.map */
