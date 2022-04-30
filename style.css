@@ -360,6 +360,7 @@ footer i {
 
 body {
   font-family: Roboto;
+  margin: 0%;
 }
 
 .banniere img {
@@ -433,11 +434,118 @@ main h2:hover::after {
 .restoName {
   border-top: 1px solid black;
   border-radius: 25px 25px 0 0;
-  margin-top: -92px;
+  margin-top: -90px;
   background-color: lightgray;
   position: absolute;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.restoMenu {
+  background: lightgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 881px) {
+  .restoMenu {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.restoMenu .menuChoix {
+  background: white;
+  /*border: 1px solid black;*/
+  border-radius: 25px 25px 25px 25px;
+  -webkit-box-shadow: 2px 1px 15px -3px black;
+          box-shadow: 2px 1px 15px -3px black;
+  position: relative;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.restoMenu p {
+  margin-top: -15px;
+}
+
+.restoMenu .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 55%;
+  right: 10%;
+  position: absolute;
+  font-weight: 900;
+}
+
+.restoMenu .checkbox {
+  position: absolute;
+  top: -1%;
+  right: -13%;
+  width: 60px;
+  height: 93px;
+  background: #99e2d0;
+  border-radius: 0 25px 25px 0;
+  opacity: 0;
+}
+
+.restoMenu .checkbox i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 35%;
+  right: 25%;
+  font-size: 2rem;
+  color: white;
+}
+
+.restoMenu .menuChoix:hover .checkbox {
+  opacity: 1;
+  right: 0%;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+}
+
+.restoMenu .menuChoix:hover .prix {
+  right: 14%;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+}
+
+.restoMenu .menuChoix:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+}
+
+button {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
+  background-image: linear-gradient(to top, #9356DC, #ff79DA);
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  padding: 1rem;
+  border: none;
+  -webkit-box-shadow: 2px 1px 15px -3px black;
+          box-shadow: 2px 1px 15px -3px black;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
