@@ -35,6 +35,7 @@
         border: none;
         @include box-shadow-base;
         margin-top: 20px;
+        cursor: pointer;
     }
     button:hover {
         @include transform-scale;

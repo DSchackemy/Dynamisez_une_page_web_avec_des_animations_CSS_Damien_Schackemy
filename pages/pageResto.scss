@@ -1,5 +1,25 @@
 @import "../utils/mixin.scss";
 
+.headerResto {
+    position: relative;
+    i {
+        position: absolute;
+        left: 2rem;
+        height: 2rem;
+        width: 2rem;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color:black;
+    }
+}
+
+
+
+
 .banniere img {
     display: block;
     width: 100%;
@@ -36,7 +56,7 @@ main h2{
     position: absolute;
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
 }
 
 .restoMenu {
@@ -151,18 +171,30 @@ main h2{
             transition: all 1000ms;
         }
     }
-    
-    
 
-button {
+    .order {
+        height: 25vh;
+        display: grid;
+        place-items: center;
+        margin-top: -45px;
+        
+        button {
+            text-align: center;
+            background-image: linear-gradient(to top, #9356DC, #ff79DA);
+            color: white;
+            font-weight:300;
+            font-size: 1.5rem;
+            border-radius: 30px;
+            padding: 1rem;
+            border: none;
+            @include box-shadow-base;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            @include transform-scale;
+        }
+    
+    }
 
-    background-image: linear-gradient(to top, #9356DC, #ff79DA);
-    color: white;
-    font-weight:300;
-    font-size: 1.5rem;
-    border-radius: 30px;
-    padding: 1rem;
-    border: none;
-    @include box-shadow-base;
-    margin-top: 20px;
-}
+    
