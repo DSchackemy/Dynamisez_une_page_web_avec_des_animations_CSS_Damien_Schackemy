@@ -1,5 +1,6 @@
 @import "../utils/mixin.scss";
 
+
 .headerResto {
     position: relative;
     i {
@@ -29,156 +30,228 @@
     position: relative;
 }
 
-main h2{
-    font-family: Shrikhand;
-    position: relative;
-    &::before {
-        @include heart;
-    }
-    &::after {
-        @include heart;
-        @include gradient;
-        opacity: 0;
-        color: transparent;
-        font-weight: 900;
-    }
-    &:hover::after {
-        opacity: 1;
-        transform: scale(1.06);
-    }
     
-}
-
-.restoName {
-    border-radius: 25px 25px 0 0;
-    margin-top: -90px;
-    background-color: #f3f3f3;
-    position: absolute;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 16px;
-}
-
-.restoMenu {
-    background: #f3f3f3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    @media (max-width: 881px) {
-        grid-template-columns: 1fr;
-        
-    }
-    .menuChoix {
-        margin: 0;
-        background: white;
-        border-radius: 25px 25px 25px 25px;
-        @include box-shadow-base;
+    
+    .restoName {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 25px 25px 0 0;
+        margin-top: -90px;
+        background-color: #f3f3f3;
         position: relative;
-        padding-left: 15px;
-        padding-top: 1px;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-        cursor: pointer;
         
-        .menuDescription {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            /*position: relative;*/
-            margin: 0;
-            width: 80%;
-            
-            
-            
+        padding-top: 10px;
+        padding-bottom: 16px;
+        width: 80%;
+        left:10%;
+
+        h2{
+    
+            font-family: Shrikhand;
+            position: relative;
+            &::before {
+                @include heart;
+            }
+            &::after {
+                @include heart;
+                @include gradient;
+                opacity: 0;
+                color: transparent;
+                font-weight: 900;
+            }
+            &:hover::after {
+                opacity: 1;
+                transform: scale(1.06);
+            }
             
         }
-        h4 {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        .plat{
-            margin-top:-20px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-    }
-    .bordure {
-        height: 5px;
-        width: 60px;
-        background: #99e2d0;
-        margin-bottom: 10px;
-        margin-top: -15px;
     }
     
-    }
-    .menuPrix {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: -70px;
-        top: 0;
-        padding-left:0.5rem;
+    .restoMenu {
         
-        
-
-        .prix {
-            font-weight: 900;
-            width:50px;
+        background: #f3f3f3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        width: 80%;
+        position: relative;
+        left:10%;
+        @media (max-width: 881px) {
+            grid-template-columns: 1fr;
+            
         }
-        
-        .checkbox {
-            background: #99e2d0;
-            border-radius: 0 25px 25px 0;
-            height: 86px;
-            width: 70px;
-            opacity: 0;
-            .fa-solid {
-                position: absolute;
-                top: 30%;
-                right:15%;
-                font-size: 2rem;
-                color:white;
+        .delay0 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 0s;
+        }
+        .delay1 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 0.5s;
+        }
+        .delay2 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 1s;
+        }
+        .delay3 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 1.5s;
+        }
+        .delay4 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 2s;
+        }
+        .delay5 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 2.5s;
+        }
+        .delay6 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 3s;
+        }
+        .delay7 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 3.5s;
+        }
+        .delay8 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 4s;
+        }
+        .delay9 {
+            animation: menuAppear 1s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            animation-delay: 4.5s;
+        }
+        .menuGroupe {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .menuChoix {
+            margin: 0;
+            background: white;
+            border-radius: 25px 25px 25px 25px;
+            @include box-shadow-base;
+            position: relative;
+            padding-left: 15px;
+            padding-top: 1px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            
+            
+            .menuDescription {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin: 0;
+                width: 80%;
+                
+                
+                
+                
+            }
+            h4 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .plat{
+                margin-top:-20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
         }
-
-    }
-    .menuChoix:hover .checkbox {
-        opacity: 1;
-        right: 0%;
-        transition: all 1000ms;
-    }
-    .menuChoix:hover .menuPrix {
-        right:0%;
-        transition: all 1000ms;
+        .bordure {
+            height: 5px;
+            width: 60px;
+            background: #99e2d0;
+            margin-bottom: 10px;
+            margin-top: -15px;
+        }
         
-    }
-    .menuChoix:hover i {
-        transform: rotate(360deg);
-        transition:all 1000ms;
-    }
-    @media (max-width: 1340px){
-        .menuChoix:hover .menuDescription{
-            width:60%;
+        .menuPrix {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -70px;
+            top: 0;
+            padding-left:0.5rem;
+            
+            
+            .prix {
+                font-weight: 900;
+                width:50px;
+            }
+            
+            .checkbox {
+                background: #99e2d0;
+                border-radius: 0 25px 25px 0;
+                height: 86px;
+                width: 70px;
+                opacity: 0;
+                .fa-solid {
+                    position: absolute;
+                    top: 30%;
+                    right:15%;
+                    font-size: 2rem;
+                    color:white;
+                }
+            }
+        }
+        .menuChoix:hover .checkbox {
+            opacity: 1;
+            right: 0%;
             transition: all 1000ms;
         }
-    }
-    @media (max-width: 435px){
-        .menuChoix:hover .menuDescription{
-            width:60%;
+        .menuChoix:hover .menuPrix {
+            right:0%;
             transition: all 1000ms;
+            
+        }
+        .menuChoix:hover i {
+            transform: rotate(360deg);
+            transition:all 1000ms;
+        }
+        @media (max-width: 1472px){
+            .menuChoix:hover .menuDescription{
+                width:60%;
+                transition: all 1000ms;
+            }
+        }
+        @media (max-width: 435px){
+            .menuChoix:hover .menuDescription{
+                width:60%;
+                transition: all 1000ms;
+            }
         }
     }
-
     .order {
         height: 25vh;
         display: grid;
         place-items: center;
         margin-top: -45px;
         
-        button {
+        .orderButton {
             text-align: center;
             background-image: linear-gradient(to top, #9356DC, #ff79DA);
             color: white;
@@ -191,10 +264,7 @@ main h2{
             margin-top: 20px;
             cursor: pointer;
         }
-        button:hover {
+        .orderButton:hover {
             @include transform-scale;
         }
-    
     }
-
-    

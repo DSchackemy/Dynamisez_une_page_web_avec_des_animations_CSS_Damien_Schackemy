@@ -332,7 +332,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 20px;
   color: white;
-  width: 100%;
+  width: auto;
 }
 
 footer h2 {
@@ -360,8 +360,12 @@ footer i {
 }
 
 body {
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 40px;
   font-family: Roboto;
-  margin: 0%;
 }
 
 .headerResto {
@@ -400,12 +404,25 @@ body {
   position: relative;
 }
 
-main h2 {
+.restoName {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px 25px 0 0;
+  margin-top: -90px;
+  background-color: #f3f3f3;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  width: 80%;
+  left: 10%;
+}
+
+.restoName h2 {
   font-family: Shrikhand;
   position: relative;
 }
 
-main h2::before {
+.restoName h2::before {
   display: inline-block;
   font-style: normal;
   text-rendering: auto;
@@ -426,7 +443,7 @@ main h2::before {
   transition: all 500ms ease;
 }
 
-main h2::after {
+.restoName h2::after {
   display: inline-block;
   font-style: normal;
   text-rendering: auto;
@@ -452,20 +469,10 @@ main h2::after {
   font-weight: 900;
 }
 
-main h2:hover::after {
+.restoName h2:hover::after {
   opacity: 1;
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
-}
-
-.restoName {
-  border-radius: 25px 25px 0 0;
-  margin-top: -90px;
-  background-color: #f3f3f3;
-  position: absolute;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 16px;
 }
 
 .restoMenu {
@@ -475,6 +482,9 @@ main h2:hover::after {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  width: 80%;
+  position: relative;
+  left: 10%;
 }
 
 @media (max-width: 881px) {
@@ -482,6 +492,121 @@ main h2:hover::after {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+.restoMenu .delay0 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.restoMenu .delay1 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.restoMenu .delay2 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.restoMenu .delay3 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.restoMenu .delay4 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.restoMenu .delay5 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.restoMenu .delay6 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.restoMenu .delay7 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.restoMenu .delay8 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.restoMenu .delay9 {
+  -webkit-animation: menuAppear 1s;
+          animation: menuAppear 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.restoMenu .menuGroupe {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .restoMenu .menuChoix {
@@ -502,7 +627,6 @@ main h2:hover::after {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  /*position: relative;*/
   margin: 0;
   width: 80%;
 }
@@ -528,7 +652,7 @@ main h2:hover::after {
   margin-top: -15px;
 }
 
-.menuPrix {
+.restoMenu .menuPrix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,12 +668,12 @@ main h2:hover::after {
   padding-left: 0.5rem;
 }
 
-.menuPrix .prix {
+.restoMenu .menuPrix .prix {
   font-weight: 900;
   width: 50px;
 }
 
-.menuPrix .checkbox {
+.restoMenu .menuPrix .checkbox {
   background: #99e2d0;
   border-radius: 0 25px 25px 0;
   height: 86px;
@@ -557,7 +681,7 @@ main h2:hover::after {
   opacity: 0;
 }
 
-.menuPrix .checkbox .fa-solid {
+.restoMenu .menuPrix .checkbox .fa-solid {
   position: absolute;
   top: 30%;
   right: 15%;
@@ -565,28 +689,28 @@ main h2:hover::after {
   color: white;
 }
 
-.menuChoix:hover .checkbox {
+.restoMenu .menuChoix:hover .checkbox {
   opacity: 1;
   right: 0%;
   -webkit-transition: all 1000ms;
   transition: all 1000ms;
 }
 
-.menuChoix:hover .menuPrix {
+.restoMenu .menuChoix:hover .menuPrix {
   right: 0%;
   -webkit-transition: all 1000ms;
   transition: all 1000ms;
 }
 
-.menuChoix:hover i {
+.restoMenu .menuChoix:hover i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition: all 1000ms;
   transition: all 1000ms;
 }
 
-@media (max-width: 1340px) {
-  .menuChoix:hover .menuDescription {
+@media (max-width: 1472px) {
+  .restoMenu .menuChoix:hover .menuDescription {
     width: 60%;
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
@@ -594,7 +718,7 @@ main h2:hover::after {
 }
 
 @media (max-width: 435px) {
-  .menuChoix:hover .menuDescription {
+  .restoMenu .menuChoix:hover .menuDescription {
     width: 60%;
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
@@ -609,7 +733,7 @@ main h2:hover::after {
   margin-top: -45px;
 }
 
-.order button {
+.order .orderButton {
   text-align: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
   background-image: linear-gradient(to top, #9356DC, #ff79DA);
@@ -625,11 +749,166 @@ main h2:hover::after {
   cursor: pointer;
 }
 
-.order button:hover {
+.order .orderButton:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   -webkit-transition: all 500ms;
   transition: all 500ms;
   opacity: 0.9;
+}
+
+@-webkit-keyframes menuAppear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes menuAppear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-animation: loader .01s;
+          animation: loader .01s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader .loaderItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loader .loaderItems .loaderItems1 {
+  background-color: #9356dc;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  -webkit-animation: jump 1s;
+          animation: jump 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.loader .loaderItems .loaderItems2 {
+  background-color: #ff79da;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  -webkit-animation: jump 1s;
+          animation: jump 1s;
+  animation-delay: .25s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.loader .loaderItems .loaderItems3 {
+  background-color: #99e2d0;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  -webkit-animation: jump 1s;
+          animation: jump 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 /*# sourceMappingURL=style.css.map */
