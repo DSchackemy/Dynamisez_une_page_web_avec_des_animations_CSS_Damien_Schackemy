@@ -33,8 +33,6 @@
     
     
     .restoName {
-        padding-left: 10px;
-        padding-right: 10px;
         border-radius: 25px 25px 0 0;
         margin-top: -90px;
         background-color: #f3f3f3;
@@ -44,6 +42,10 @@
         padding-bottom: 16px;
         width: 80%;
         left:10%;
+        @media (max-width: 530px) {
+            width:100%;
+            left:0;
+        }
 
         h2{
     
@@ -76,10 +78,16 @@
         width: 80%;
         position: relative;
         left:10%;
-        @media (max-width: 881px) {
+        @media (max-width: 1320px) {
             grid-template-columns: 1fr;
             
         }
+        @media (max-width: 530px) {
+            position: relative;
+            left:2%;
+            width: 100%;
+        }
+        
         .delay0 {
             animation: menuAppear 1s;
             animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
@@ -143,6 +151,7 @@
         .menuGroupe {
             padding-left: 10px;
             padding-right: 10px;
+
         }
         .menuChoix {
             margin: 0;
@@ -155,6 +164,14 @@
             padding-bottom: 5px;
             margin-bottom: 10px;
             cursor: pointer;
+            @media (max-width: 530px) {
+                width: 80%;
+            }
+            @media (max-width: 410px) {
+                width: 70%;
+            }
+            
+            
             
             
             .menuDescription {
@@ -232,7 +249,7 @@
             transform: rotate(360deg);
             transition:all 1000ms;
         }
-        @media (max-width: 1472px){
+        @media (max-width: 1680px){
             .menuChoix:hover .menuDescription{
                 width:60%;
                 transition: all 1000ms;
