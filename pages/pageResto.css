@@ -394,7 +394,7 @@
   }
 }
 
-.restoMenu .order {
+.order {
   height: 25vh;
   display: -ms-grid;
   display: grid;
@@ -402,7 +402,7 @@
   margin-top: -45px;
 }
 
-.restoMenu .order .orderButton {
+.order .orderButton {
   text-align: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
   background-image: linear-gradient(to top, #9356DC, #ff79DA);
@@ -418,7 +418,7 @@
   cursor: pointer;
 }
 
-.restoMenu .order .orderButton:hover {
+.order .orderButton:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   -webkit-transition: all 500ms;

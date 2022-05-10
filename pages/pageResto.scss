@@ -269,27 +269,27 @@
             }
         }
     }
-    .order {
-        height: 25vh;
-        display: grid;
-        place-items: center;
-        margin-top: -45px;
-        
-        .orderButton {
-            text-align: center;
-            background-image: linear-gradient(to top, #9356DC, #ff79DA);
-            color: white;
-            font-weight:300;
-            font-size: 1.5rem;
-            border-radius: 30px;
-            padding: 1rem;
-            border: none;
-            @include box-shadow-base;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-        .orderButton:hover {
-            @include transform-scale;
-        }
+}
+.order {
+    height: 25vh;
+    display: grid;
+    place-items: center;
+    margin-top: -45px;
+    
+    .orderButton {
+        text-align: center;
+        background-image: linear-gradient(to top, #9356DC, #ff79DA);
+        color: white;
+        font-weight:300;
+        font-size: 1.5rem;
+        border-radius: 30px;
+        padding: 1rem;
+        border: none;
+        @include box-shadow-base;
+        margin-top: 20px;
+        cursor: pointer;
     }
+    .orderButton:hover {
+        @include transform-scale;
     }
+}
