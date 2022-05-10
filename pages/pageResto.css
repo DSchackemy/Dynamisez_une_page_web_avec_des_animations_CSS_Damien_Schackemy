@@ -286,6 +286,12 @@
   width: 80%;
 }
 
+@media (max-width: 410px) {
+  .restoMenu .menuChoix .menuDescription {
+    width: 70%;
+  }
+}
+
 .restoMenu .menuChoix h4 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -372,15 +378,23 @@
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 1680px) and (max-width: 1413px) {
   .restoMenu .menuChoix:hover .menuDescription {
-    width: 60%;
+    width: 55%;
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
   }
 }
 
-.order {
+@media (max-width: 1680px) and (max-width: 435px) {
+  .restoMenu .menuChoix:hover .menuDescription {
+    width: 45%;
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+  }
+}
+
+.restoMenu .order {
   height: 25vh;
   display: -ms-grid;
   display: grid;
@@ -388,7 +402,7 @@
   margin-top: -45px;
 }
 
-.order .orderButton {
+.restoMenu .order .orderButton {
   text-align: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79DA));
   background-image: linear-gradient(to top, #9356DC, #ff79DA);
@@ -404,7 +418,7 @@
   cursor: pointer;
 }
 
-.order .orderButton:hover {
+.restoMenu .order .orderButton:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   -webkit-transition: all 500ms;

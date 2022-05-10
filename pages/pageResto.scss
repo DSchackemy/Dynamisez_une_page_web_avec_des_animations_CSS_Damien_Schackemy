@@ -180,7 +180,9 @@
                 white-space: nowrap;
                 margin: 0;
                 width: 80%;
-                
+                @media (max-width: 410px) {
+                    width: 70%;
+                }
                 
                 
                 
@@ -254,10 +256,15 @@
                 width:60%;
                 transition: all 1000ms;
             }
+            @media (max-width: 1413px){
+                .menuChoix:hover .menuDescription{
+                    width:55%;
+                    transition: all 1000ms;
+                }
         }
         @media (max-width: 435px){
             .menuChoix:hover .menuDescription{
-                width:60%;
+                width:45%;
                 transition: all 1000ms;
             }
         }
@@ -284,4 +291,5 @@
         .orderButton:hover {
             @include transform-scale;
         }
+    }
     }
