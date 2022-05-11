@@ -4,7 +4,6 @@
 
 .headerResto i {
   position: absolute;
-  left: 2rem;
   height: 2rem;
   width: 2rem;
   top: 50%;
@@ -34,6 +33,12 @@
   position: relative;
 }
 
+@media (max-width: 760px) {
+  .banniere img {
+    height: 45vh;
+  }
+}
+
 .restoName {
   border-radius: 25px 25px 0 0;
   margin-top: -90px;
@@ -53,6 +58,7 @@
 }
 
 .restoName h2 {
+  margin-left: 15px;
   font-family: Shrikhand;
   position: relative;
 }
@@ -66,7 +72,7 @@
   font-weight: 400;
   content: "\f004";
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   top: 15%;
   font-size: 2rem;
   color: inherit;
@@ -87,7 +93,7 @@
   font-weight: 400;
   content: "\f004";
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   top: 15%;
   font-size: 2rem;
   color: inherit;
@@ -132,7 +138,7 @@
 @media (max-width: 530px) {
   .restoMenu {
     position: relative;
-    left: 2%;
+    left: 0;
     width: 100%;
   }
 }
@@ -268,13 +274,14 @@
 
 @media (max-width: 530px) {
   .restoMenu .menuChoix {
-    width: 80%;
+    width: 95%;
   }
 }
 
 @media (max-width: 410px) {
   .restoMenu .menuChoix {
-    width: 70%;
+    width: 100%;
+    left: -2%;
   }
 }
 
@@ -324,7 +331,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  right: -70px;
+  right: 9px;
   top: 0;
   padding-left: 0.5rem;
 }
@@ -338,7 +345,7 @@
   background: #99e2d0;
   border-radius: 0 25px 25px 0;
   height: 86px;
-  width: 70px;
+  width: 1px;
   opacity: 0;
 }
 
@@ -353,6 +360,7 @@
 .restoMenu .menuChoix:hover .checkbox {
   opacity: 1;
   right: 0%;
+  width: 70px;
   -webkit-transition: all 1000ms;
   transition: all 1000ms;
 }

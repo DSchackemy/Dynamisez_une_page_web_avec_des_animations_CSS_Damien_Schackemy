@@ -5,7 +5,6 @@
     position: relative;
     i {
         position: absolute;
-        left: 2rem;
         height: 2rem;
         width: 2rem;
         top: 50%;
@@ -28,6 +27,9 @@
     object-fit: cover;
     object-position: center;
     position: relative;
+    @media (max-width:760px) {
+        height: 45vh;
+        }
 }
 
     
@@ -48,7 +50,7 @@
         }
 
         h2{
-    
+            margin-left: 15px;
             font-family: Shrikhand;
             position: relative;
             &::before {
@@ -73,7 +75,7 @@
         
         background: #f3f3f3;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: (repeat(3, 1fr));
         gap: 1rem;
         width: 80%;
         position: relative;
@@ -84,7 +86,7 @@
         }
         @media (max-width: 530px) {
             position: relative;
-            left:2%;
+            left:0;
             width: 100%;
         }
         
@@ -165,10 +167,11 @@
             margin-bottom: 10px;
             cursor: pointer;
             @media (max-width: 530px) {
-                width: 80%;
+                width: 95%;
             }
             @media (max-width: 410px) {
-                width: 70%;
+                width: 100%;
+                left:-2%;
             }
             
             
@@ -212,7 +215,7 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            right: -70px;
+            right: 9px;
             top: 0;
             padding-left:0.5rem;
             
@@ -226,7 +229,7 @@
                 background: #99e2d0;
                 border-radius: 0 25px 25px 0;
                 height: 86px;
-                width: 70px;
+                width: 1px;
                 opacity: 0;
                 .fa-solid {
                     position: absolute;
@@ -240,6 +243,7 @@
         .menuChoix:hover .checkbox {
             opacity: 1;
             right: 0%;
+            width: 70px;
             transition: all 1000ms;
         }
         .menuChoix:hover .menuPrix {

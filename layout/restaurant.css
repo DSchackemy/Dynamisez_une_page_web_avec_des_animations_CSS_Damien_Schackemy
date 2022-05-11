@@ -31,6 +31,8 @@
 .restaurant .restaurant_card .descriptionCard {
   position: relative;
   background-color: white;
+  padding-left: 15px;
+  border-radius: 0 0 15px 15px;
 }
 
 .restaurant .restaurant_card .descriptionCard::before {
@@ -42,7 +44,7 @@
   font-weight: 400;
   content: "\f004";
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   top: 15%;
   font-size: 2rem;
   color: inherit;
@@ -63,7 +65,7 @@
   font-weight: 400;
   content: "\f004";
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   top: 15%;
   font-size: 2rem;
   color: inherit;
@@ -117,7 +119,7 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
-  right: 3rem;
+  right: 0.5rem;
   top: 1rem;
 }
 

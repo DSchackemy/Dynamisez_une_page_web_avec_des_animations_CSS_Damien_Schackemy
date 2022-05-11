@@ -7,4 +7,10 @@
   margin: 0%;
   font-size: 3rem;
 }
+
+@media (max-width: 440px) {
+  .Titre {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=logoTitre.css.map */
