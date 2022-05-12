@@ -76,15 +76,11 @@
         
         background: #f3f3f3;
         display: grid;
-        grid-template-columns: (repeat(3, 1fr));
+        grid-template-columns: 1fr;
         gap: 1rem;
         width: 80%;
         position: relative;
         left:10%;
-        @media (max-width: 1320px) {
-            grid-template-columns: 1fr;
-            
-        }
         @media (max-width: 530px) {
             position: relative;
             left:0;

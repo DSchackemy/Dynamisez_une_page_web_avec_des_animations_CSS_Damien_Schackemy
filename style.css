@@ -338,7 +338,6 @@
 footer {
   background-color: #292727;
   padding-left: 35px;
-  margin-bottom: 25px;
   padding-top: 10px;
   padding-bottom: 20px;
   color: white;
@@ -504,19 +503,12 @@ body {
   background: #f3f3f3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   gap: 1rem;
   width: 80%;
   position: relative;
   left: 10%;
-}
-
-@media (max-width: 1320px) {
-  .restoMenu {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 530px) {
