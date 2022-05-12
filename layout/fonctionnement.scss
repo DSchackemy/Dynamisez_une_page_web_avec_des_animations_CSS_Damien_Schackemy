@@ -5,6 +5,7 @@
         margin-bottom: 25px;
     }
     ol {
+        width: 95%;
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
@@ -12,6 +13,10 @@
         @media (max-width:881px) {
             flex-direction: column;
             margin-right: 30px;
+            width: 90%;
+        }
+        @media (max-width:490px) {
+            width: 85%;
         }
     li {
         background-color: #f2f2f2;
