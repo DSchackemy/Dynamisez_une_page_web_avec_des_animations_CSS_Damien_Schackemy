@@ -664,8 +664,8 @@ body {
 
 @media (max-width: 410px) {
   .restoMenu .menuChoix {
-    width: 100%;
-    left: -2%;
+    width: 98%;
+    left: -1%;
   }
 }
 
